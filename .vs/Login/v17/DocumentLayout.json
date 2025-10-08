@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\3ds\\Desktop\\Login\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\login\\login\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\login\\login\\models\\constantes\\colaboradortipoconstante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\models\\constantes\\colaboradortipoconstante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,19 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Login\\Login\\appsettings.json",
+              "RelativeDocumentMoniker": "Login\\appsettings.json",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\Login\\Login\\appsettings.json",
+              "RelativeToolTip": "Login\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-08T15:15:50.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ColaboradorTipoConstante.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Login\\Login\\Models\\Constantes\\ColaboradorTipoConstante.cs",
               "RelativeDocumentMoniker": "Login\\Models\\Constantes\\ColaboradorTipoConstante.cs",
               "ToolTip": "C:\\Users\\3ds\\Desktop\\Login\\Login\\Models\\Constantes\\ColaboradorTipoConstante.cs",
               "RelativeToolTip": "Login\\Models\\Constantes\\ColaboradorTipoConstante.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T15:06:50.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SituacaoConstantes.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Login\\Login\\Models\\Constantes\\SituacaoConstantes.cs",
               "RelativeDocumentMoniker": "Login\\Models\\Constantes\\SituacaoConstantes.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "Login\\Models\\Constantes\\SituacaoConstantes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T14:59:32.757Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T14:59:32.757Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Colaborador.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Login\\Login\\Models\\Colaborador.cs",
               "RelativeDocumentMoniker": "Login\\Models\\Colaborador.cs",
@@ -64,12 +80,11 @@
               "RelativeToolTip": "Login\\Models\\Colaborador.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T14:55:04.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T14:55:04.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\Login\\Login\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Login\\Models\\Cliente.cs",
@@ -77,8 +92,7 @@
               "RelativeToolTip": "Login\\Models\\Cliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T14:28:46.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T14:28:46.414Z"
             }
           ]
         }
