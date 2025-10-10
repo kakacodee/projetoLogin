@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\3ds\\Desktop\\Login\\Login\\Login.csproj": {}
+    "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Login.csproj": {}
   },
   "projects": {
-    "C:\\Users\\3ds\\Desktop\\Login\\Login\\Login.csproj": {
+    "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Login.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\3ds\\Desktop\\Login\\Login\\Login.csproj",
+        "projectUniqueName": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Login.csproj",
         "projectName": "Login",
-        "projectPath": "C:\\Users\\3ds\\Desktop\\Login\\Login\\Login.csproj",
+        "projectPath": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Login.csproj",
         "packagesPath": "C:\\Users\\3ds\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\3ds\\Desktop\\Login\\Login\\obj\\",
+        "outputPath": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\3ds\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -63,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
