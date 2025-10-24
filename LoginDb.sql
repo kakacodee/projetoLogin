@@ -1,4 +1,4 @@
-
+drop database LoginLoja;
 create database LoginLoja;
 
 -- USANDO O BANCO DE DADOS
@@ -10,7 +10,7 @@ use LoginLoja;
 create table cliente(
 	Id int primary key auto_increment,
     Nome varchar(50) not null,
-    Nascimento date not null,
+    Nascimento datetime not null,
     CPF decimal(10,2)not null,
     Telefone varchar(50) not null,
 	Email varchar(50) not null,

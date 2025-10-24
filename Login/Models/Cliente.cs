@@ -12,7 +12,7 @@ namespace Login.Models
         public string Nome { get; set; }
         [Display(Name ="Data de Nascimento", Description = "Nascimento do Cliente")]
         [Required(ErrorMessage ="Esse ca´mpo é obrigatório")]
-        public DateOnly Nascimento { get; set; }
+        public DateTime Nascimento { get; set; }
         [Display(Name = "Sexo", Description = "Sexo do Cliente"), MaxLength(1)]
         public string Sexo { get; set; }
         [Display(Name = "CPF", Description = "CPF do Cliente")]
@@ -26,7 +26,7 @@ namespace Login.Models
         public string Email { get; set; }
         [Display(Name = "Senha", Description = "Senha do Cliente")]
         [Required(ErrorMessage ="Esse ca´mpo é obrigatório")]
-        public int Senha { get; set; }
+        public string Senha { get; set; }
         [Display(Name = "Situação", Description = "Situação do Cliente"), MaxLength(1)]
         [Required(ErrorMessage ="Esse ca´mpo é obrigatório")]
         public string Situacao { get; set; }
