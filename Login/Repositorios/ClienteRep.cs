@@ -181,7 +181,47 @@ namespace Login.Repositorios
                 conexao.Close();
             }
         }
+        public void Excluir(int Id)
+        {
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("delete from Cliente WHERE Id=@Id ", conexao);
+                cmd.Parameters.AddWithValue("@Id", Id);
+                int i = cmd.ExecuteNonQuery();
+                conexao.Close();
+            }
+        }
 
+        public Cliente ObterCliente(int Id)
+        {
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("select * from Cliente WHERE Id=@Id ", conexao);
+                cmd.Parameters.AddWithValue("@Id", Id);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                MySqlDataReader dr;
+
+                Cliente cliente = new Cliente();
+                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (dr.Read())
+                {
+                    cliente.Id = (Int32)(dr["Id"]);
+                    cliente.Nome = (string)(dr["Nome"]);
+                    cliente.Nascimento = (DateTime)(dr["Nascimento"]);
+                    cliente.Sexo = (string)(dr["Sexo"]);
+                    cliente.CPF = (Int32)(dr["CPF"]);
+                    cliente.Telefone = (Int32)(dr["Telefone"]);
+                    cliente.Email = (string)(dr["Email"]);
+                    cliente.Senha = (string)(dr["Senha"]);
+                    cliente.Situacao = (string)(dr["Situacao"]);
+
+                }
+                return cliente;
+            }
+        }
 
     }
 }
