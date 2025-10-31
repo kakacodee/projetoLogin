@@ -17,7 +17,7 @@ namespace Login.Models
         public string Sexo { get; set; }
         [Display(Name = "CPF", Description = "CPF do Cliente")]
         [Required(ErrorMessage ="Esse ca´mpo é obrigatório")]
-        public decimal CPF { get; set; }
+        public string CPF { get; set; }
         [Display(Name = "Telefone", Description = "Telefone do Cliente")]
         [Required(ErrorMessage ="Esse ca´mpo é obrigatório")]
         public int Telefone { get; set; }

@@ -3,15 +3,20 @@ using Login.Models.Constantes;
 using Login.Repositorios.Interfaces;
 using MySql.Data.MySqlClient;
 using System.Data;
+using X.PagedList;
+using X.PagedList.Extensions;
+using static Org.BouncyCastle.Math.EC.ECCurve;
 namespace Login.Repositorios
 {
     public class ClienteRep : IClienteRep
     {
         private readonly string _conexaoMySQL;
+        IConfiguration _config;
 
         public ClienteRep(IConfiguration conf)
         {
             _conexaoMySQL = conf.GetConnectionString("DefaultConnection");
+            _config = conf;
         }
 
         public Cliente Login(string Email, string Senha)
@@ -36,7 +41,7 @@ namespace Login.Repositorios
                     cliente.Nascimento = Convert.ToDateTime(dr["Nascimento"]);
 
                     cliente.Sexo = Convert.ToString(dr["Sexo"]);
-                    cliente.CPF = Convert.ToInt32(dr["CPF"]);
+                    cliente.CPF = Convert.ToString(dr["CPF"]);
                     cliente.Telefone = Convert.ToInt32(dr["Telefone"]);
                     cliente.Situacao = Convert.ToString(dr["Situacao"]);
 
@@ -71,7 +76,7 @@ namespace Login.Repositorios
                             Nome = (string)(dr["Nome"]),
                             Nascimento = Convert.ToDateTime(dr["Nascimento"]),
                             Sexo = Convert.ToString(dr["Sexo"]),
-                            CPF = Convert.ToInt32(dr["CPF"]),
+                            CPF = Convert.ToString(dr["CPF"]),
                             Telefone = Convert.ToInt32(dr["Telefone"]),
                             Email = Convert.ToString(dr["Email"]),
                             Senha = Convert.ToString(dr["Senha"]),
@@ -212,7 +217,7 @@ namespace Login.Repositorios
                     cliente.Nome = (string)(dr["Nome"]);
                     cliente.Nascimento = (DateTime)(dr["Nascimento"]);
                     cliente.Sexo = (string)(dr["Sexo"]);
-                    cliente.CPF = (Int32)(dr["CPF"]);
+                    cliente.CPF = (string)(dr["CPF"]);
                     cliente.Telefone = (Int32)(dr["Telefone"]);
                     cliente.Email = (string)(dr["Email"]);
                     cliente.Senha = (string)(dr["Senha"]);
@@ -222,6 +227,105 @@ namespace Login.Repositorios
                 return cliente;
             }
         }
+        public Cliente BuscaCpfCliente(string CPF)
+        {
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("select CPF from Cliente WHERE CPF=@CPF ", conexao);
+                cmd.Parameters.AddWithValue("@CPF", CPF);
 
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                MySqlDataReader dr;
+
+                Cliente cliente = new Cliente();
+                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (dr.Read())
+                {
+                    cliente.CPF = (string)(dr["CPF"]);
+
+                }
+                return cliente;
+            }
+        }
+        public Cliente BuscaEmailCliente(string email)
+        {
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("select Email from Cliente WHERE Email=@Email ", conexao);
+                cmd.Parameters.AddWithValue("@Email", email);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                MySqlDataReader dr;
+
+                Cliente cliente = new Cliente();
+                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                while (dr.Read())
+                {
+                    cliente.Email = (string)(dr["Email"]);
+
+                }
+                return cliente;
+            }
+        }
+        public IPagedList<Cliente> ObterTodosClientes(int? pagina, string pesquisa)
+        {
+            int RegistroPorPagina = _config.GetValue<int>("RegistroPorPagina");
+
+            int NumeroPagina = pagina ?? 1;
+
+            var clientePesquisadoEmail = BuscaEmailCliente(pesquisa);
+
+            //if (!string.IsNullOrEmpty(pesquisa))
+            //{
+            //    clientePesquisadoEmail = clientePesquisadoEmail.Where(a => a.Email == pesquisa);
+            //}           
+
+            List<Cliente> cliList = new List<Cliente>();
+            using (var conexao = new MySqlConnection(_conexaoMySQL))
+            {
+                conexao.Open();
+                MySqlCommand cmd = new MySqlCommand("SELECT * FROM CLIENTE", conexao);
+
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+
+                conexao.Close();
+
+                foreach (DataRow dr in dt.Rows)
+                {
+                    cliList.Add(
+                        new Cliente
+                        {
+                            Id = Convert.ToInt32(dr["Id"]),
+                            Nome = (string)(dr["Nome"]),
+                            Nascimento = Convert.ToDateTime(dr["Nascimento"]),
+                            Sexo = Convert.ToString(dr["Sexo"]),
+                            CPF = Convert.ToString(dr["CPF"]),
+                            Telefone = Convert.ToInt32(dr["Telefone"]),
+                            Email = Convert.ToString(dr["Email"]),
+                            Senha = Convert.ToString(dr["Senha"]),
+                            Situacao = Convert.ToString(dr["Situacao"])
+                        });
+                }
+                ;
+                return cliList.ToPagedList<Cliente>(NumeroPagina, RegistroPorPagina);
+            }
+        }
+
+
+        ClienteRep IClienteRep.Login(string Email, string Senha)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Cliente BuscaCPFCliente(string CPF)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,8 +1,17 @@
+using Login.Repositorios;
+using Login.Repositorios.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+
+builder.Services.AddScoped<IClienteRep, ClienteRep>();
+builder.Services.AddScoped<IColaboradorRep, ColaboradorRep>();
+
+builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
