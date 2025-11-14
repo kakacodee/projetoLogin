@@ -4,25 +4,25 @@ using Newtonsoft.Json;
 using System.Security.Cryptography.X509Certificates;
 namespace Login.Libraries.Login
 {
-    public class LoginCliente
+    public class LoginColaborador
     {
-        private string Key = "Login.Cliente";
+        private string Key = "Login.Colaborador";
         private Sessao.Sessao _sessao;
-        public LoginCliente(Sessao.Sessao sessao)
+        public LoginColaborador(Sessao.Sessao sessao)
         {
             _sessao = sessao;
         }
-        public void Login(Cliente cliente)
+        public void Login(Colaborador colaborador)
         {
-            string clienteJSONstring = JsonConvert.SerializeObject(cliente);
+            string clienteJSONstring = JsonConvert.SerializeObject(colaborador);
             _sessao.Cadastrar(Key, clienteJSONstring);
         }
-        public Cliente GetCliente()
+        public Cliente GetColaborador()
         {
             if (_sessao.Existe(Key))
             {
-                string clienteJSONstring = _sessao.Consultar(Key);
-                return JsonConvert.DeserializeObject<Cliente>(clienteJSONstring);
+                string colaboradorJSONstring = _sessao.Consultar(Key);
+                return JsonConvert.DeserializeObject<Cliente>(colaboradorJSONstring);
             }
             else
             {
