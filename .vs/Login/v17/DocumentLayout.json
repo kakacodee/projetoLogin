@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\3ds\\Desktop\\projetoLogin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\libraries\\sessao\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\libraries\\sessao\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\libraries\\login\\logincliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\libraries\\login\\logincliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\repositorios\\clienterep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\repositorios\\clienterep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\libraries\\sessao\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\libraries\\sessao\\sessao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\repositorios\\colaboradorrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\repositorios\\colaboradorrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\repositorios\\interfaces\\iclienterep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\repositorios\\interfaces\\iclienterep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\repositorios\\interfaces\\icolaboradorrep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\models\\colaborador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\repositorios\\interfaces\\iclienterep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|solutionrelative:login\\repositorios\\interfaces\\iclienterep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA920BEF-7DD0-459F-9817-D530A5CB4359}|Login\\Login.csproj|c:\\users\\3ds\\desktop\\projetologin\\login\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,12 +63,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LoginCliente.cs",
+              "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Libraries\\Login\\LoginCliente.cs",
+              "RelativeDocumentMoniker": "Login\\Libraries\\Login\\LoginCliente.cs",
+              "ToolTip": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Libraries\\Login\\LoginCliente.cs",
+              "RelativeToolTip": "Login\\Libraries\\Login\\LoginCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:41:58.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Sessao.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Libraries\\Sessao\\Sessao.cs",
               "RelativeDocumentMoniker": "Login\\Libraries\\Sessao\\Sessao.cs",
               "ToolTip": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Libraries\\Sessao\\Sessao.cs",
               "RelativeToolTip": "Login\\Libraries\\Sessao\\Sessao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T11:39:07.874Z",
               "EditorCaption": ""
@@ -77,14 +94,14 @@
               "RelativeDocumentMoniker": "Login\\Repositorios\\ColaboradorRep.cs",
               "ToolTip": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Repositorios\\ColaboradorRep.cs",
               "RelativeToolTip": "Login\\Repositorios\\ColaboradorRep.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAuwA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T11:01:29.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "IColaboradorRep.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Repositorios\\Interfaces\\IColaboradorRep.cs",
               "RelativeDocumentMoniker": "Login\\Repositorios\\Interfaces\\IColaboradorRep.cs",
@@ -97,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Program.cs",
               "RelativeDocumentMoniker": "Login\\Program.cs",
@@ -110,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Colaborador.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Models\\Colaborador.cs",
               "RelativeDocumentMoniker": "Login\\Models\\Colaborador.cs",
@@ -123,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "IClienteRep.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Repositorios\\Interfaces\\IClienteRep.cs",
               "RelativeDocumentMoniker": "Login\\Repositorios\\Interfaces\\IClienteRep.cs",
@@ -136,20 +153,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ClienteRep.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Repositorios\\ClienteRep.cs",
               "RelativeDocumentMoniker": "Login\\Repositorios\\ClienteRep.cs",
               "ToolTip": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Repositorios\\ClienteRep.cs",
               "RelativeToolTip": "Login\\Repositorios\\ClienteRep.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAC4BAAAAAAAAAADwvz8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-10T14:23:51.585Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\appsettings.json",
               "RelativeDocumentMoniker": "Login\\appsettings.json",
@@ -162,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ColaboradorTipoConstante.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Models\\Constantes\\ColaboradorTipoConstante.cs",
               "RelativeDocumentMoniker": "Login\\Models\\Constantes\\ColaboradorTipoConstante.cs",
@@ -175,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "SituacaoConstantes.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Models\\Constantes\\SituacaoConstantes.cs",
               "RelativeDocumentMoniker": "Login\\Models\\Constantes\\SituacaoConstantes.cs",
@@ -188,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\3ds\\Desktop\\projetoLogin\\Login\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Login\\Models\\Cliente.cs",
